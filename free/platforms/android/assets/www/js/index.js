@@ -18,7 +18,7 @@ var app = {
                 var ifr = document.getElementById('ifr').contentWindow;
                 ifr.postMessage("back","*");
             }*/
-            if(d.indexOf("tel")>=0 || d.indexOf("market")>=0)
+            if(d.indexOf("tel")>=0 || d.indexOf("market")>=0 || d.indexOf("http")>=0)
             {
                 $("#ifr").attr("src",d);
             }

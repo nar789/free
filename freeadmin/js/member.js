@@ -18,10 +18,20 @@ function del(no)
 
 function update(no,cnt)
 {
+    var phone=$('#'+cnt+"phone").val();
+    if(g!=2&&g!=3)
+    {
+        if(phone.indexOf("market")!=0)
+        {
+            var idx=phone.indexOf("id=");
+            var nstr=phone.substring(idx,phone.length);
+            phone="market://details?"+nstr;
+        }
+    }
 	$.post("member_update.php",
     {
         no:no,
-        phone:$('#'+cnt+"phone").val(),
+        phone:phone,
         title:encodeURIComponent($('#'+cnt+"title").val()),
         content:encodeURIComponent($('#'+cnt+"content").val()),
         g:g
@@ -36,6 +46,15 @@ function save(){
     if(pfurl)
     {
         var phone=$("#phone").val();
+        if(g!=2&&g!=3)
+        {
+        	if(phone.indexOf("market")!=0)
+        	{
+        		var idx=phone.indexOf("id=");
+        		var nstr=phone.substring(idx,phone.length);
+        		phone="market://details?"+nstr;
+        	}
+        }
         var title=encodeURIComponent($("#title").val());
         var content=encodeURIComponent($("#content").val());
         if(phone&&title&&content){

@@ -17,7 +17,10 @@
 	<table id='gv'>
 		<tr>
 			<td>프로필사진</td>
-			<td>핸드폰</td>
+			<td><?
+				if($_GET['g']==2||$_GET['g']==3)echo "핸드폰";
+				else echo "마켓주소";
+			?></td>
 			<td>제목</td>
 			<td>내용</td>
 			<td>저장</td>
@@ -42,7 +45,10 @@
 		<tr>
 			<td>순번</td>
 			<td>프로필사진</td>
-			<td>핸드폰</td>
+			<td><?
+				if($_GET['g']==2||$_GET['g']==3)echo "핸드폰";
+				else echo "마켓주소";
+			?></td>
 			<td>제목</td>
 			<td>내용</td>
 			<td>수정</td>
