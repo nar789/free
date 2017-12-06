@@ -1,0 +1,42 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	overflow-x:hidden;
+}
+.profile{
+	width: 50px;
+	height: 50px;
+	border-radius: 70px;
+	display: inline-block;
+	
+}
+.rowbody{
+	margin-left: 10px;
+	vertical-align: top;
+	display: inline-block;
+}
+.title{
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: 10px;
+	color:#2f4081;
+	margin-bottom: 5px;
+}
+.content{
+	font-size: 10px;
+	color:#919191;
+}
+.btn{
+	float:right;
+	margin-right: 40px;
+	display: inline-block;	
+	width: 50px;
+	height: 50px;
+}
+.row{
+	margin: 0px;
+	padding: 20px;
+	width: 100%;
+	border-bottom: 1px solid #dedede;
+}

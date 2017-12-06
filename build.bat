@@ -1,0 +1,1 @@
+cd free1 && build.bat && cd .. && cd free2 && build.bat && cd .. && cd free3 && build.bat && cd .. && cd free4 && build.bat && cd .. && cd free5 && build.bat && cd .. 
