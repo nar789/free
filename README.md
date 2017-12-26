@@ -5,4 +5,5 @@
 171126 db backup.
 171127 key chg.
 171209 app copy finish.
+171226 delete prob issue.
 ```
